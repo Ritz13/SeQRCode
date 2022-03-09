@@ -1,0 +1,113 @@
+package com.seqr.core;
+
+import com.seqr.utils.*;
+import com.seqr.utils.classes.HybridBinarizer;
+import com.seqr.utils.exceptions.NotFoundException;
+import com.seqr.utils.result.ParsedResult;
+import com.seqr.utils.result.ResultParser;
+
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.net.URI;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.concurrent.Callable;
+
+public class DecodeWorker implements Callable<Integer> {
+
+    private static final int RED = 0xFFFF0000;
+    private static final int BLACK = 0xFF000000;
+    private static final int WHITE = 0xFFFFFFFF;
+
+    private final DecoderConfig config;
+    private final Queue<URI> inputs;
+    private final Map<DecodeHintType,?> hints;
+
+    DecodeWorker(DecoderConfig config, Queue<URI> inputs) {
+        this.config = config;
+        this.inputs = inputs;
+        hints = config.buildHints();
+    }
+
+    @Override
+    public Integer call() throws IOException {
+        int successful = 0;
+        for (URI input; (input = inputs.poll()) != null;) {
+            Result[][] results = decode(input, hints);
+            if (results != null) {
+                successful++;
+            }
+        }
+        return successful;
+    }
+
+
+    private Result[][] decode(URI uri, Map<DecodeHintType,?> hints) throws IOException {
+        BufferedImage image = ImageReader.readImage(uri);
+
+        BufferedImage[] triImage = new TriSeparator(image).separateImage();
+        Result[][] results = new Result[3][];
+
+        for(int color = 0; color < 3; color++) {
+            LuminanceSource source;
+            if (config.crop == null) {
+                source = new BufferedImageLuminanceSource(triImage[color]);
+            } else {
+                List<Integer> crop = config.crop;
+                source = new BufferedImageLuminanceSource(
+                        triImage[color], crop.get(0), crop.get(1), crop.get(2), crop.get(3));
+            }
+
+            BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(source));
+
+            MultiFormatReader multiFormatReader = new MultiFormatReader();
+            try {
+                results[color] = new Result[]{multiFormatReader.decode(bitmap, hints)};
+            } catch (NotFoundException ignored) {
+                System.out.println(uri + ": No barcode found");
+                return null;
+            }
+        }
+
+        StringWriter output = new StringWriter();
+        String[] textParts = new String[3];
+        String[] parsedParts = new String[3];
+        for(int i=0; i<3; i++) {
+            for (Result result : results[i]) {
+                ParsedResult parsedResult = ResultParser.parseResult(result);
+                textParts[i] = result.getText();
+                parsedParts[i] = parsedResult.getDisplayResult();
+                if(i==2) {
+                    ResultPoint[] resultPoints = result.getResultPoints();
+                    int numResultPoints = resultPoints.length;
+                    output.write(uri +
+                            " (format: " + result.getCodeFormat() +
+                            ", type: " + parsedResult.getType() + "):\n" +
+                            "Raw result:\n" +
+                            TextBuilder.merge(textParts) + "\n" +
+                            "Parsed result:\n" +
+                            TextBuilder.merge(parsedParts) + "\n" +
+                            "Found " + numResultPoints + " result points.\n");
+
+                    for (int pointIndex = 0; pointIndex < numResultPoints; pointIndex++) {
+                        ResultPoint rp = resultPoints[pointIndex];
+                        if (rp != null) {
+                            output.write("  Point " + pointIndex + ": (" + rp.getX() + ',' + rp.getY() + ')');
+                            if (pointIndex != numResultPoints - 1) {
+                                output.write('\n');
+                            }
+                        }
+                    }
+                }
+                output.write('\n');
+            }
+        }
+
+        System.out.println(output);
+
+        return results;
+    }
+
+}
