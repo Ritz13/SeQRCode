@@ -53,6 +53,10 @@ public class MatrixToImageConfig {
         int red = getColorValue(redV);
         int green = getColorValue(greenV);
         int blue = getColorValue(blueV);
+        if(red == 0 && green == 0 && blue == 255)
+            red = green = 40;
+        else if(red == 255 && green == 0 && blue == 255)
+            green = 40;
         return new Color(red, green, blue).getRGB();
     }
 
