@@ -39,6 +39,7 @@ public final class CommandLineEncoder {
             hints.put(EncodeHintType.ERROR_CORRECTION, config.errorCorrectionLevel);
         }
 
+        // Tri-Separate Plaintext
         String[] triText = new TriSeparator(config.contents.get(0)).separateText();
         BitMatrix[] matrices = new BitMatrix[3];
         for(int i=0; i<3; i++) {

@@ -25,12 +25,12 @@ final class EncoderConfig {
     @Parameter(names = "--width",
             description = "Image width",
             validateWith = PositiveInteger.class)
-    int width = 300;
+    int width = 800;
 
     @Parameter(names = "--height",
             description = "Image height",
             validateWith = PositiveInteger.class)
-    int height = 300;
+    int height = 800;
 
     @Parameter(names = "--error_correction_level",
             description = "Error correction level for the encoding")
