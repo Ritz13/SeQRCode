@@ -1,167 +1,167 @@
-com/seqr/core/EncoderConfig.java
- com.seqr.core.EncoderConfig
-com/seqr/utils/seqrcode/decoder/DataMask.java
- com.seqr.utils.seqrcode.decoder.DataMask
- com.seqr.utils.seqrcode.decoder.DataMask$1
- com.seqr.utils.seqrcode.decoder.DataMask$2
- com.seqr.utils.seqrcode.decoder.DataMask$3
- com.seqr.utils.seqrcode.decoder.DataMask$4
- com.seqr.utils.seqrcode.decoder.DataMask$5
- com.seqr.utils.seqrcode.decoder.DataMask$6
- com.seqr.utils.seqrcode.decoder.DataMask$7
- com.seqr.utils.seqrcode.decoder.DataMask$8
-com/seqr/utils/result/ParsedResult.java
- com.seqr.utils.result.ParsedResult
-com/seqr/utils/seqrcode/decoder/BitMatrixParser.java
- com.seqr.utils.seqrcode.decoder.BitMatrixParser
-com/seqr/utils/seqrcode/detector/FinderPatternInfo.java
- com.seqr.utils.seqrcode.detector.FinderPatternInfo
-com/seqr/core/ImageReader.java
- com.seqr.core.ImageReader
-com/seqr/utils/classes/GlobalHistogramBinarizer.java
- com.seqr.utils.classes.GlobalHistogramBinarizer
-com/seqr/utils/MultiFormatWriter.java
- com.seqr.utils.MultiFormatWriter
- com.seqr.utils.MultiFormatWriter$1
-com/seqr/core/MatrixToImageWriter.java
- com.seqr.core.MatrixToImageWriter
-com/seqr/utils/seqrcode/decoder/Mode.java
- com.seqr.utils.seqrcode.decoder.Mode
-com/seqr/utils/seqrcode/encoder/BlockPair.java
- com.seqr.utils.seqrcode.encoder.BlockPair
-com/seqr/utils/classes/DetectorResult.java
- com.seqr.utils.classes.DetectorResult
-com/seqr/utils/seqrcode/decoder/SeQRCodeDecoderMetaData.java
- com.seqr.utils.seqrcode.decoder.SeQRCodeDecoderMetaData
-com/seqr/utils/result/ResultParser.java
- com.seqr.utils.result.ResultParser
-com/seqr/utils/Binarizer.java
- com.seqr.utils.Binarizer
-com/seqr/utils/exceptions/NotFoundException.java
- com.seqr.utils.exceptions.NotFoundException
-com/seqr/utils/Reader.java
- com.seqr.utils.Reader
-com/seqr/utils/DecodeHintType.java
- com.seqr.utils.DecodeHintType
-com/seqr/core/DecodeWorker.java
- com.seqr.core.DecodeWorker
-com/seqr/utils/seqrcode/decoder/DataBlock.java
- com.seqr.utils.seqrcode.decoder.DataBlock
-com/seqr/core/CommandLineRunner.java
- com.seqr.core.CommandLineRunner
-com/seqr/utils/classes/reedsolomon/GenericGF.java
- com.seqr.utils.classes.reedsolomon.GenericGF
-com/seqr/utils/LuminanceSource.java
- com.seqr.utils.LuminanceSource
-com/seqr/utils/TriSeparator.java
- com.seqr.utils.TriSeparator
-com/seqr/core/BufferedImageLuminanceSource.java
- com.seqr.core.BufferedImageLuminanceSource
-com/seqr/utils/seqrcode/detector/FinderPatternFinder.java
- com.seqr.utils.seqrcode.detector.FinderPatternFinder
- com.seqr.utils.seqrcode.detector.FinderPatternFinder$1
- com.seqr.utils.seqrcode.detector.FinderPatternFinder$EstimatedModuleComparator
-com/seqr/utils/seqrcode/detector/AlignmentPattern.java
- com.seqr.utils.seqrcode.detector.AlignmentPattern
-com/seqr/utils/result/ParsedResultType.java
- com.seqr.utils.result.ParsedResultType
-com/seqr/utils/ResultPointCallback.java
- com.seqr.utils.ResultPointCallback
-com/seqr/utils/classes/HybridBinarizer.java
- com.seqr.utils.classes.HybridBinarizer
-com/seqr/utils/result/TextParsedResult.java
- com.seqr.utils.result.TextParsedResult
-com/seqr/utils/seqrcode/detector/FinderPattern.java
- com.seqr.utils.seqrcode.detector.FinderPattern
-com/seqr/utils/TextBuilder.java
- com.seqr.utils.TextBuilder
-com/seqr/utils/seqrcode/encoder/MaskUtil.java
- com.seqr.utils.seqrcode.encoder.MaskUtil
-com/seqr/utils/seqrcode/encoder/SeQRCode.java
- com.seqr.utils.seqrcode.encoder.SeQRCode
-com/seqr/utils/BinaryBitmap.java
- com.seqr.utils.BinaryBitmap
-com/seqr/utils/Result.java
- com.seqr.utils.Result
-com/seqr/utils/seqrcode/decoder/DecodedBitStreamParser.java
- com.seqr.utils.seqrcode.decoder.DecodedBitStreamParser
- com.seqr.utils.seqrcode.decoder.DecodedBitStreamParser$1
-com/seqr/core/CommandLineEncoder.java
- com.seqr.core.CommandLineEncoder
-com/seqr/utils/classes/PerspectiveTransform.java
- com.seqr.utils.classes.PerspectiveTransform
-com/seqr/utils/seqrcode/encoder/Encoder.java
- com.seqr.utils.seqrcode.encoder.Encoder
- com.seqr.utils.seqrcode.encoder.Encoder$1
-com/seqr/utils/seqrcode/SeQRWriter.java
- com.seqr.utils.seqrcode.SeQRWriter
-com/seqr/utils/classes/BitMatrix.java
- com.seqr.utils.classes.BitMatrix
-com/seqr/utils/CodeFormat.java
- com.seqr.utils.CodeFormat
-com/seqr/utils/classes/reedsolomon/GenericGFPoly.java
- com.seqr.utils.classes.reedsolomon.GenericGFPoly
-com/seqr/utils/seqrcode/detector/AlignmentPatternFinder.java
- com.seqr.utils.seqrcode.detector.AlignmentPatternFinder
-com/seqr/utils/classes/BitSource.java
- com.seqr.utils.classes.BitSource
-com/seqr/utils/classes/GridSampler.java
- com.seqr.utils.classes.GridSampler
-com/seqr/utils/classes/reedsolomon/ReedSolomonException.java
- com.seqr.utils.classes.reedsolomon.ReedSolomonException
-com/seqr/utils/seqrcode/SeQRCodeReader.java
- com.seqr.utils.seqrcode.SeQRCodeReader
-com/seqr/utils/Writer.java
- com.seqr.utils.Writer
-com/seqr/utils/ResultMetadataType.java
- com.seqr.utils.ResultMetadataType
-com/seqr/utils/classes/BitArray.java
- com.seqr.utils.classes.BitArray
-com/seqr/utils/classes/StringUtils.java
- com.seqr.utils.classes.StringUtils
-com/seqr/utils/seqrcode/decoder/Decoder.java
- com.seqr.utils.seqrcode.decoder.Decoder
-com/seqr/utils/exceptions/FormatException.java
- com.seqr.utils.exceptions.FormatException
-com/seqr/utils/MultiFormatReader.java
- com.seqr.utils.MultiFormatReader
-com/seqr/utils/classes/reedsolomon/ReedSolomonDecoder.java
- com.seqr.utils.classes.reedsolomon.ReedSolomonDecoder
-com/seqr/utils/seqrcode/decoder/FormatInformation.java
- com.seqr.utils.seqrcode.decoder.FormatInformation
-com/seqr/utils/seqrcode/decoder/ErrorCorrectionLevel.java
- com.seqr.utils.seqrcode.decoder.ErrorCorrectionLevel
-com/seqr/core/DecoderConfig.java
- com.seqr.core.DecoderConfig
-com/seqr/utils/ResultPoint.java
- com.seqr.utils.ResultPoint
-com/seqr/utils/classes/MathUtils.java
- com.seqr.utils.classes.MathUtils
-com/seqr/utils/seqrcode/encoder/MatrixUtil.java
- com.seqr.utils.seqrcode.encoder.MatrixUtil
-com/seqr/utils/classes/CharacterSetECI.java
- com.seqr.utils.classes.CharacterSetECI
-com/seqr/utils/EncodeHintType.java
- com.seqr.utils.EncodeHintType
-com/seqr/utils/seqrcode/encoder/ByteMatrix.java
- com.seqr.utils.seqrcode.encoder.ByteMatrix
-com/seqr/utils/exceptions/ChecksumException.java
- com.seqr.utils.exceptions.ChecksumException
-com/seqr/utils/classes/reedsolomon/ReedSolomonEncoder.java
- com.seqr.utils.classes.reedsolomon.ReedSolomonEncoder
-com/seqr/utils/seqrcode/decoder/Version.java
- com.seqr.utils.seqrcode.decoder.Version
- com.seqr.utils.seqrcode.decoder.Version$ECB
- com.seqr.utils.seqrcode.decoder.Version$ECBlocks
-com/seqr/utils/seqrcode/detector/Detector.java
- com.seqr.utils.seqrcode.detector.Detector
-com/seqr/utils/classes/DefaultGridSampler.java
- com.seqr.utils.classes.DefaultGridSampler
-com/seqr/utils/WriterException.java
- com.seqr.utils.WriterException
-com/seqr/core/MatrixToImageConfig.java
- com.seqr.core.MatrixToImageConfig
-com/seqr/utils/exceptions/ReaderException.java
- com.seqr.utils.exceptions.ReaderException
-com/seqr/utils/classes/DecoderResult.java
- com.seqr.utils.classes.DecoderResult
+com/vsuc/seqr/utils/result/TextParsedResult.java
+ com.vsuc.seqr.utils.result.TextParsedResult
+com/vsuc/seqr/utils/classes/GridSampler.java
+ com.vsuc.seqr.utils.classes.GridSampler
+com/vsuc/seqr/utils/seqrcode/decoder/Decoder.java
+ com.vsuc.seqr.utils.seqrcode.decoder.Decoder
+com/vsuc/seqr/utils/exceptions/FormatException.java
+ com.vsuc.seqr.utils.exceptions.FormatException
+com/vsuc/seqr/utils/EncodeHintType.java
+ com.vsuc.seqr.utils.EncodeHintType
+com/vsuc/seqr/core/CommandLineEncoder.java
+ com.vsuc.seqr.core.CommandLineEncoder
+com/vsuc/seqr/utils/classes/HybridBinarizer.java
+ com.vsuc.seqr.utils.classes.HybridBinarizer
+com/vsuc/seqr/utils/seqrcode/decoder/Mode.java
+ com.vsuc.seqr.utils.seqrcode.decoder.Mode
+com/vsuc/seqr/utils/seqrcode/detector/FinderPattern.java
+ com.vsuc.seqr.utils.seqrcode.detector.FinderPattern
+com/vsuc/seqr/utils/seqrcode/SeQRWriter.java
+ com.vsuc.seqr.utils.seqrcode.SeQRWriter
+com/vsuc/seqr/utils/seqrcode/encoder/MatrixUtil.java
+ com.vsuc.seqr.utils.seqrcode.encoder.MatrixUtil
+com/vsuc/seqr/utils/seqrcode/decoder/SeQRCodeDecoderMetaData.java
+ com.vsuc.seqr.utils.seqrcode.decoder.SeQRCodeDecoderMetaData
+com/vsuc/seqr/utils/seqrcode/detector/FinderPatternFinder.java
+ com.vsuc.seqr.utils.seqrcode.detector.FinderPatternFinder
+ com.vsuc.seqr.utils.seqrcode.detector.FinderPatternFinder$1
+ com.vsuc.seqr.utils.seqrcode.detector.FinderPatternFinder$EstimatedModuleComparator
+com/vsuc/seqr/utils/seqrcode/encoder/Encoder.java
+ com.vsuc.seqr.utils.seqrcode.encoder.Encoder
+ com.vsuc.seqr.utils.seqrcode.encoder.Encoder$1
+com/vsuc/seqr/utils/classes/CharacterSetECI.java
+ com.vsuc.seqr.utils.classes.CharacterSetECI
+com/vsuc/seqr/utils/seqrcode/encoder/SeQRCode.java
+ com.vsuc.seqr.utils.seqrcode.encoder.SeQRCode
+com/vsuc/seqr/core/ImageReader.java
+ com.vsuc.seqr.core.ImageReader
+com/vsuc/seqr/core/EncoderConfig.java
+ com.vsuc.seqr.core.EncoderConfig
+com/vsuc/seqr/utils/classes/DefaultGridSampler.java
+ com.vsuc.seqr.utils.classes.DefaultGridSampler
+com/vsuc/seqr/utils/exceptions/ReaderException.java
+ com.vsuc.seqr.utils.exceptions.ReaderException
+com/vsuc/seqr/core/MatrixToImageConfig.java
+ com.vsuc.seqr.core.MatrixToImageConfig
+com/vsuc/seqr/utils/classes/BitMatrix.java
+ com.vsuc.seqr.utils.classes.BitMatrix
+com/vsuc/seqr/utils/classes/BitSource.java
+ com.vsuc.seqr.utils.classes.BitSource
+com/vsuc/seqr/utils/classes/reedsolomon/GenericGF.java
+ com.vsuc.seqr.utils.classes.reedsolomon.GenericGF
+com/vsuc/seqr/utils/seqrcode/decoder/Version.java
+ com.vsuc.seqr.utils.seqrcode.decoder.Version
+ com.vsuc.seqr.utils.seqrcode.decoder.Version$ECB
+ com.vsuc.seqr.utils.seqrcode.decoder.Version$ECBlocks
+com/vsuc/seqr/utils/WriterException.java
+ com.vsuc.seqr.utils.WriterException
+com/vsuc/seqr/utils/Result.java
+ com.vsuc.seqr.utils.Result
+com/vsuc/seqr/core/BufferedImageLuminanceSource.java
+ com.vsuc.seqr.core.BufferedImageLuminanceSource
+com/vsuc/seqr/utils/seqrcode/encoder/MaskUtil.java
+ com.vsuc.seqr.utils.seqrcode.encoder.MaskUtil
+com/vsuc/seqr/utils/DecodeHintType.java
+ com.vsuc.seqr.utils.DecodeHintType
+com/vsuc/seqr/utils/classes/DecoderResult.java
+ com.vsuc.seqr.utils.classes.DecoderResult
+com/vsuc/seqr/core/DecoderConfig.java
+ com.vsuc.seqr.core.DecoderConfig
+com/vsuc/seqr/utils/classes/PerspectiveTransform.java
+ com.vsuc.seqr.utils.classes.PerspectiveTransform
+com/vsuc/seqr/utils/classes/StringUtils.java
+ com.vsuc.seqr.utils.classes.StringUtils
+com/vsuc/seqr/utils/seqrcode/decoder/FormatInformation.java
+ com.vsuc.seqr.utils.seqrcode.decoder.FormatInformation
+com/vsuc/seqr/utils/ResultMetadataType.java
+ com.vsuc.seqr.utils.ResultMetadataType
+com/vsuc/seqr/core/DecodeWorker.java
+ com.vsuc.seqr.core.DecodeWorker
+com/vsuc/seqr/utils/classes/reedsolomon/GenericGFPoly.java
+ com.vsuc.seqr.utils.classes.reedsolomon.GenericGFPoly
+com/vsuc/seqr/utils/LuminanceSource.java
+ com.vsuc.seqr.utils.LuminanceSource
+com/vsuc/seqr/utils/CodeFormat.java
+ com.vsuc.seqr.utils.CodeFormat
+com/vsuc/seqr/utils/seqrcode/detector/FinderPatternInfo.java
+ com.vsuc.seqr.utils.seqrcode.detector.FinderPatternInfo
+com/vsuc/seqr/utils/Reader.java
+ com.vsuc.seqr.utils.Reader
+com/vsuc/seqr/utils/seqrcode/detector/AlignmentPatternFinder.java
+ com.vsuc.seqr.utils.seqrcode.detector.AlignmentPatternFinder
+com/vsuc/seqr/utils/result/ParsedResultType.java
+ com.vsuc.seqr.utils.result.ParsedResultType
+com/vsuc/seqr/utils/classes/BitArray.java
+ com.vsuc.seqr.utils.classes.BitArray
+com/vsuc/seqr/utils/seqrcode/decoder/DataMask.java
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask$1
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask$2
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask$3
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask$4
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask$5
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask$6
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask$7
+ com.vsuc.seqr.utils.seqrcode.decoder.DataMask$8
+com/vsuc/seqr/utils/classes/DetectorResult.java
+ com.vsuc.seqr.utils.classes.DetectorResult
+com/vsuc/seqr/utils/classes/reedsolomon/ReedSolomonDecoder.java
+ com.vsuc.seqr.utils.classes.reedsolomon.ReedSolomonDecoder
+com/vsuc/seqr/utils/seqrcode/detector/AlignmentPattern.java
+ com.vsuc.seqr.utils.seqrcode.detector.AlignmentPattern
+com/vsuc/seqr/utils/ResultPoint.java
+ com.vsuc.seqr.utils.ResultPoint
+com/vsuc/seqr/utils/classes/reedsolomon/ReedSolomonException.java
+ com.vsuc.seqr.utils.classes.reedsolomon.ReedSolomonException
+com/vsuc/seqr/utils/seqrcode/decoder/ErrorCorrectionLevel.java
+ com.vsuc.seqr.utils.seqrcode.decoder.ErrorCorrectionLevel
+com/vsuc/seqr/utils/TextBuilder.java
+ com.vsuc.seqr.utils.TextBuilder
+com/vsuc/seqr/utils/Binarizer.java
+ com.vsuc.seqr.utils.Binarizer
+com/vsuc/seqr/utils/MultiFormatWriter.java
+ com.vsuc.seqr.utils.MultiFormatWriter
+ com.vsuc.seqr.utils.MultiFormatWriter$1
+com/vsuc/seqr/utils/result/ParsedResult.java
+ com.vsuc.seqr.utils.result.ParsedResult
+com/vsuc/seqr/utils/seqrcode/detector/Detector.java
+ com.vsuc.seqr.utils.seqrcode.detector.Detector
+com/vsuc/seqr/utils/exceptions/ChecksumException.java
+ com.vsuc.seqr.utils.exceptions.ChecksumException
+com/vsuc/seqr/core/CommandLineRunner.java
+ com.vsuc.seqr.core.CommandLineRunner
+com/vsuc/seqr/utils/MultiFormatReader.java
+ com.vsuc.seqr.utils.MultiFormatReader
+com/vsuc/seqr/utils/ResultPointCallback.java
+ com.vsuc.seqr.utils.ResultPointCallback
+com/vsuc/seqr/utils/classes/MathUtils.java
+ com.vsuc.seqr.utils.classes.MathUtils
+com/vsuc/seqr/utils/seqrcode/SeQRCodeReader.java
+ com.vsuc.seqr.utils.seqrcode.SeQRCodeReader
+com/vsuc/seqr/core/MatrixToImageWriter.java
+ com.vsuc.seqr.core.MatrixToImageWriter
+com/vsuc/seqr/utils/classes/GlobalHistogramBinarizer.java
+ com.vsuc.seqr.utils.classes.GlobalHistogramBinarizer
+com/vsuc/seqr/utils/classes/reedsolomon/ReedSolomonEncoder.java
+ com.vsuc.seqr.utils.classes.reedsolomon.ReedSolomonEncoder
+com/vsuc/seqr/utils/Writer.java
+ com.vsuc.seqr.utils.Writer
+com/vsuc/seqr/utils/exceptions/NotFoundException.java
+ com.vsuc.seqr.utils.exceptions.NotFoundException
+com/vsuc/seqr/utils/TriSeparator.java
+ com.vsuc.seqr.utils.TriSeparator
+com/vsuc/seqr/utils/seqrcode/encoder/ByteMatrix.java
+ com.vsuc.seqr.utils.seqrcode.encoder.ByteMatrix
+com/vsuc/seqr/utils/seqrcode/decoder/BitMatrixParser.java
+ com.vsuc.seqr.utils.seqrcode.decoder.BitMatrixParser
+com/vsuc/seqr/utils/seqrcode/decoder/DataBlock.java
+ com.vsuc.seqr.utils.seqrcode.decoder.DataBlock
+com/vsuc/seqr/utils/result/ResultParser.java
+ com.vsuc.seqr.utils.result.ResultParser
+com/vsuc/seqr/utils/seqrcode/encoder/BlockPair.java
+ com.vsuc.seqr.utils.seqrcode.encoder.BlockPair
+com/vsuc/seqr/utils/seqrcode/decoder/DecodedBitStreamParser.java
+ com.vsuc.seqr.utils.seqrcode.decoder.DecodedBitStreamParser
+ com.vsuc.seqr.utils.seqrcode.decoder.DecodedBitStreamParser$1
+com/vsuc/seqr/utils/BinaryBitmap.java
+ com.vsuc.seqr.utils.BinaryBitmap
